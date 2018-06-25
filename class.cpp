@@ -3,6 +3,9 @@ using namespace std;
 class A
 {
 public:
+	A(){
+		cout << " в деструктор вошёл";
+	}
 	 void a (){ cout << "a";
 	 }
 };
@@ -12,8 +15,7 @@ public:
 	}
 };
 int main(){
-B b;
-b.b();
+A b;
 
 }
 
